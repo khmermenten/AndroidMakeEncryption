@@ -1,7 +1,7 @@
 #include <jni.h>
 #include <syscall.h>
 #define SQLITE_HAS_CODEC // make sure this line is here
-#include "sqlite3.h"
+#include <sqlite3.h>
 #include <android/log.h>
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
